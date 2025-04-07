@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate - Instagram</title>
+    <link rel="stylesheet" href="/Proyecto en Javascript/assets/css/registrar.css"">
+</head>
+<body>
+
+    <div class="contenido">
+        <div class="log-on border_insc">
+            <div class="logo">
+                <img src="/Proyecto en Javascript/assets/img/instagram-logo-black-on-white.png" alt="Instagram Logo">
+            </div>
+            <div class="info">
+                <p>Regístrate para ver fotos y vídeos de tus amigos.</p>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com" class="fb-btn">
+                    <img src="/Proyecto en Javascript/assets/img/icons8-facebook-50.png" alt="Icono facebook" class="fb-icono">
+                    Iniciar sesión con Facebook
+                </a>
+            </div>
+            <div class="separador">
+                <span class="linea"></span>
+                <span class="o">o</span>
+                <span class="linea"></span>
+            </div>
+            <form method="POST" action="/Instagram/Registrar">
+                <div>
+                    <input type="email" name="Correo" id="correo" maxlength="50" placeholder="Correo electrónico">
+                </div>
+                <div>
+                    <input type="text" name="Celular" id="celular" maxlength="9" placeholder="Celular">
+                </div>
+                <div>
+                    <input type="password" name="Passwordd" id="passwordd" maxlength="50" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="text" name="Nombre_Completo" id="nombre" maxlength="50" placeholder="Nombre completo">
+                </div>
+                <div>
+                    <input type="text" name="Nombre_Usuario" id="usuario" maxlength="50" placeholder="Nombre de usuario">
+                </div>
+
+                <div class="info-2">
+                    <p>
+                        Es posible que los usuarios de nuestro servicio hayan subido tu información de contacto en Instagram.
+                        <a href="https://www.facebook.com/help/instagram/261704639352628">Más información</a>
+                    </p>
+                </div>
+                <div class="info-3">
+                    <p>
+                        Al registrarte, aceptas nuestras
+                        <a href="https://help.instagram.com/581066165581870/?locale=es_LA">Condiciones</a>, nuestra
+                        <a href="https://www.facebook.com/privacy/policy">Política de Privacidad</a> y nuestra
+                        <a href="https://privacycenter.instagram.com/policies/cookies/">Política de cookies.</a>
+                    </p>
+                </div>
+                <button type="submit" class="log_btn">Registrarte</button>
+            </form>
+        </div>
+        <div class="registro border_insc">
+            <p>
+                ¿Tienes una cuenta? <a href="login.html"><br>Inicia Sesión</a>
+            </p>
+        </div>
+        <div class="descargas">
+            <p>Descarga la aplicación.</p>
+            <div>
+                <img src="/Proyecto en Javascript/assets/img/google_play_icon.png" alt="Icono de google play">
+                <img src="/Proyecto en Javascript/assets/img/microsoft-icon.png" alt="Icono de microsoft">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

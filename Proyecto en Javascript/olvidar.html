@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restablecer contraseña - Instagram</title>
+    <link rel="stylesheet" href="/Proyecto en Javascript/assets/css/olvidar.css"">
+</head>
+<body>
+    <header class="header">
+        <a href="/Instagram/Index">
+            <div class="logoig">
+                <img src="/Proyecto en Javascript/assets/img/instagram-logo-black-on-white.png" alt="Logo de Instagram" />
+            </div>
+        </a>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-enter">Entrar</a>
+            <a href="registrar.html" class="btn btn-register">Registrarte</a>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <div class="log-on border_insc">
+            <div class="logo">
+                <img src="/Proyecto en Javascript/assets/img/candado2.jpg" alt="Instagram Logo">
+            </div>
+            <p class="info">¿Tienes problemas para entrar?</p>
+            <p class="info-2">Introduce tu correo electrónico y te mostraremos tu contraseña.</p>
+            <form method="POST" action="/Instagram/Olvidar">
+                <div>
+                    <input type="email" name="correo" id="correo" maxlength="50" placeholder="Correo electrónico">
+                </div>
+                <button type="submit" class="log_btn">Mostrar contraseña</button>
+            </form>
+            <div class="password" style="display:none;">
+                <p>Tu contraseña es: <strong>contraseña_ejemplo</strong></p>
+            </div>
+
+            <div class="olvide">
+                <a href="https://help.instagram.com/374546259294234">
+                    ¿No puedes cambiar tu contraseña?
+                </a>
+            </div>
+            <div class="otros">
+                <div class="separador">
+                    <span class="linea"></span>
+                    <span class="o">o</span>
+                    <span class="linea"></span>
+                </div>
+            </div>
+            <p class="l1">
+                <a href="registrar.html">Crear cuenta nueva</a>
+            </p>
+        </div>
+        <p class="relleno">
+            <a href="login.html" class="volver-btn">Volver al inicio de sesión</a>
+        </p>
+    </div>
+</body>
+</html>
