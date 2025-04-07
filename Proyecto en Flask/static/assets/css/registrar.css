@@ -1,0 +1,265 @@
+﻿body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenido {
+    min-height: 90vh;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.log-on {
+    border: 1px solid #121212;
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto;
+}
+
+.border_insc {
+    border: 1px solid #262626;
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto;
+}
+
+.logo img {
+    margin: 30px;
+    max-width: 180px;
+    object-fit: cover;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 85%;
+    max-width: 380px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #262626;
+    border-radius: 3px;
+    background: #121212;
+    font-size: 80%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.log_btn {
+    width: 85%;
+    max-width: 380px;
+    padding: 6px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 80%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+    .log_btn:hover {
+        background-color: #007bb5;
+    }
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.linea {
+    height: 1px;
+    width: 35%;
+    background-color: #262626;
+}
+
+.o {
+    margin: 0 20px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.facebook {
+    border-radius: 4px;
+    background-color: #0095f6;
+    text-align: center;
+    display: inline-flex;
+}
+
+    .facebook a {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 0 30px 0 30px;
+    }
+
+        .facebook a img {
+            margin: 10px;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+.olvide a {
+    color: #e0f1ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.registro p {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.registro a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.descargas img {
+    max-width: 135px;
+    margin: 5px;
+}
+
+.descargas p {
+    color: #f5f5f5;
+    font-size: 14px;
+}
+
+.info {
+    font-size: 16px;
+    color: #a8a8a8;
+    font-weight: bold;
+}
+
+.info-2, .info-3 {
+    width: 85%;
+    font-size: 12px;
+    color: #737373;
+    margin: auto;
+}
+
+    .info-2 a, .info-3 a {
+        text-decoration: none;
+        color: #0095f6;
+    }
+
+@media (max-width: 768px) {
+    .contenido {
+        margin: 0 5%;
+        padding: 15px;
+    }
+
+    .log-on,
+    .border_insc {
+        max-width: 100%;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    .log_btn {
+        max-width: 100%;
+    }
+
+    .separador {
+        flex-direction: column;
+    }
+
+    .linea {
+        width: 70%;
+    }
+
+    .o {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 120px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    .log_btn {
+        font-size: 14px;
+    }
+
+    .descargas img {
+        max-width: 100px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .registro p {
+        font-size: 12px;
+    }
+}
+
+.links {
+    background-color: black;
+    padding: 20px 30px 50px;
+    font-size: 12px;
+    color: #a8a8a8;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+    .footer-container a {
+        color: #a8a8a8;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 0 5px;
+    }
+
+    .footer-container span {
+        font-size: 12px;
+        color: #a8a8a8;
+        margin-left: 10px;
+    }
+
+    .footer-container a:hover {
+        text-decoration: underline;
+    }
+
+.footer-separator {
+    margin: 0 15px;
+}
+
+.idioma {
+    background-color: black;
+    color: #a8a8a8;
+    border: none;
+    font-size: 12px;
+}
+
+    .idioma option {
+        background-color: black;
+        color: #a8a8a8;
+    }

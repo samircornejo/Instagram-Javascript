@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/login.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="login">
+            <div class="images d-none d-lg-block">
+                <div class="frame">
+                    <img src="{{ url_for('static', filename='assets/img/home-phones.png') }}" alt="Carcasa de celulares">
+                    <div class="slider">
+                        <div id="carouselExampleSlidesOnly" class="carrusel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ url_for('static', filename='assets/img/screenshot1.png') }}" class="d-block w-100" alt="Captura 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='assets/img/screenshot2.png') }}" class="d-block w-100" alt="Captura 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='assets/img/screenshot3.png') }}" class="d-block w-100" alt="Captura 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename='assets/img/screenshot4.png') }}" class="d-block w-100" alt="Captura 4">
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="log-on border_insc">
+                    <div class="logo">
+                        <img src="{{ url_for('static', filename='assets/img/instagram-logo-black-on-white.png') }}" alt="Instagram Logo">
+                    </div>
+                    <form method="POST" action="/login">
+                        <div>
+                            <input type="email" name="correo" id="correo" maxlength="50" placeholder="Teléfono, usuario o correo electrónico"/>
+                        </div>
+                        <div>
+                            <input type="password" name="passwordd" id="passwordd" maxlength="50" placeholder="Contraseña"/>
+                        </div>
+                        <button type="submit" class="log_btn">Iniciar Sesión</button>
+                    </form>
+                    
+                    <div class="otros">
+                        <div class="separador">
+                            <span class="linea"></span>
+                            <span class="o">o</span>
+                            <span class="linea"></span>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com">
+                                <img src="{{ url_for('static', filename='assets/img/facebook.png') }}" alt="Icono facebook">
+                                Iniciar sesión con Facebook
+                            </a>
+                        </div>
+                        <div class="olvide">
+                            <a href="{{ url_for('olvidarr') }}">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="registro border_insc">
+                    <p>¿No tienes una cuenta? <a href="{{ url_for('registrar') }}">Regístrate</a></p>
+                </div>
+                <div class="descargas">
+                    <p>Descarga la aplicación.</p>
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/google_play_icon.png') }}" alt="Icono de google play">
+                        <img src="{{ url_for('static', filename='assets/img/microsoft-icon.png') }}" alt="Icono de microsoft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

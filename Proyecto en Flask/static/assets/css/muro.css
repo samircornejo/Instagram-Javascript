@@ -1,0 +1,119 @@
+﻿body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.muro {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.publicaciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.publicacion {
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.imagen-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.imagen-publicacion img {
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+.descripcion, .comentarios, .agregar-comentario {
+    padding: 10px;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #1da1f2;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.agregar-comentario {
+    display: flex;
+    align-items: center;
+}
+
+    .agregar-comentario input {
+        flex: 1;
+        padding: 5px;
+        margin-right: 10px;
+        background-color: #222;
+        border: 1px solid #444;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .agregar-comentario button {
+        padding: 5px 10px;
+        background-color: #1da1f2;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .agregar-comentario button:hover {
+            background-color: #0d8bdc;
+        }
+
+.navbar {
+    background-color: #111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-title a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    color: #1da1f2;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+    .navbar-links a:hover {
+        color: #0d8bdc;
+    }

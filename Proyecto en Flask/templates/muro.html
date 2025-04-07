@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Muro - Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/muro.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-title">
+                <a href="{{ url_for('muro') }}">Instagram</a>
+            </div>
+            <div class="navbar-links">
+                <a href="{{ url_for('login') }}">Cerrar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="muro">
+        <div class="publicaciones">
+            <div class="publicacion">
+                <div class="usuario">
+                    <img src="https://dthezntil550i.cloudfront.net/f4/latest/f41908291942413280009640715/1280_960/1b2d9510-d66d-43a2-971a-cfcbb600e7fe.png" alt="Imagen de perfil" class="imagen-perfil">
+                    <span class="nombre-usuario">usuario1</span>
+                </div>
+                <div class="imagen-publicacion">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9FvzvlywSDnJKZw5Fzyjfd3vYYQnc0HCJA&s" alt="Imagen de la publicación">
+                </div>
+                <div class="descripcion">
+                    <span class="nombre-usuario">usuario1</span>
+                    <span>Descripción de la publicación 1</span>
+                </div>
+                <div class="comentarios">
+                    <div class="comentario">
+                        <span class="nombre-usuario">comentador1</span>
+                        <span>Comentario 1</span>
+                    </div>
+                    <div class="comentario">
+                        <span class="nombre-usuario">comentador2</span>
+                        <span>Comentario 2</span>
+                    </div>
+                </div>
+                <div class="agregar-comentario">
+                    <input type="text" placeholder="Añadir un comentario...">
+                    <button type="button">Publicar</button>
+                </div>
+            </div>
+
+            <div class="publicacion">
+                <div class="usuario">
+                    <img src="https://i.pinimg.com/236x/35/f6/71/35f6716adc65383508eca7cfda5b5594.jpg" alt="Imagen de perfil" class="imagen-perfil">
+                    <span class="nombre-usuario">usuario2</span>
+                </div>
+                <div class="imagen-publicacion">
+                    <img src="https://definicion.de/wp-content/uploads/2019/10/Publicacion-periodicos.jpg" alt="Imagen de la publicación">
+                </div>
+                <div class="descripcion">
+                    <span class="nombre-usuario">usuario2</span>
+                    <span>Descripción de la publicación 2</span>
+                </div>
+                <div class="comentarios">
+                    <div class="comentario">
+                        <span class="nombre-usuario">comentador3</span>
+                        <span>Comentario 3</span>
+                    </div>
+                </div>
+                <div class="agregar-comentario">
+                    <input type="text" placeholder="Añadir un comentario...">
+                    <button type="button">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
